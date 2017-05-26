@@ -27,10 +27,10 @@ return promiseRequest({
 	method: 'POST',
 	url:'https://www.googleapis.com/oauth2/v3/token',
 	form: {
-		code: <authorization code>,
-		redirect_uri: sails.config.googleApi.redirectURI,
-		client_id: sails.config.googleApi.clientId,
-		client_secret: sails.config.googleApi.clientSecret,
+		code: <authorization code from oauth>,
+		redirect_uri: <your redirect URI>,
+		client_id: <your client id>,
+		client_secret: <your client secret>,
 		grant_type: 'authorization_code'
 	}
 });
