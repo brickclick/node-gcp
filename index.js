@@ -147,8 +147,7 @@ GCPClient.prototype.print = failRetry(function(printerId, content, contentType, 
 		json: true
 	})
 	.then(function(result) {
-		console.log(result);
-		return
+		return result;
 	})
 	.nodeify(cb);
 });
