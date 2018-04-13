@@ -1,6 +1,6 @@
 {
   "name": "node-gcp",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Library to simplify Google Cloud Print calls",
   "main": "index.js",
   "scripts": {
