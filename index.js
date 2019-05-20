@@ -167,7 +167,7 @@ GCPClient.prototype.print = failRetry(function (printerId, content, contentType,
 
     if (settings.printerId) {
         settings.printerid = settings.printerId;
-        delete settings.printerid;
+        delete settings.printerId;
     }
 
     settings.title = settings.title || title || 'UNTITLED JOB ' + shortid.generate();
