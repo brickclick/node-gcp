@@ -53,18 +53,18 @@ printClient.print('printer_id', 'print me!', 'text/plain');
 ```
 
 ### Tickets
-[Cloud Job Tickets](https://developers.google.com/cloud-print/docs/cdd#cjt) can be submitted using the `settings` parameter. By including a ticket, you can do things like change page margins, orientationm, or the number of copies printed. **Tickets must be JSON-encoded strings**, as they are sent with the print job form data directly to Google Cloud Print without modification.
+[Cloud Job Tickets](https://developers.google.com/cloud-print/docs/cdd#cjt) can be submitted using the `settings` parameter. By including a ticket, you can do things like change page margins, orientation, or the number of copies printed. **Tickets must be JSON-encoded strings**, as they are sent with the print job form data directly to Google Cloud Print without modification.
 
 Here's an example:
 ```javascript
 const ticket = {
-  version: "1.0",
+  version: '1.0',
   print: {
     copies: {
       copies: 3
     },
     page_orientation: {
-      type: 0
+      type: 'LANDSCAPE'
     },
     margins: {
       top_microns: 0,
